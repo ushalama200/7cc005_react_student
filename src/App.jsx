@@ -9,6 +9,7 @@ function App() {
 
   return (
     <div>
+      <Navbar />
       <MyRouter />
     </div>
   );
