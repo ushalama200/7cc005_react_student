@@ -5,7 +5,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg bg-body-tertiary shadow">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          MeroKam
+          Student
         </Link>
         <button
           className="navbar-toggler"
@@ -26,30 +26,26 @@ function Navbar() {
                 aria-current="page"
                 to="/create-profile"
               >
-                {login && !isProfile ? "Add Profile" : ""}
+                Add Profile
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                className="nav-link active"
-                aria-current="page"
-                to={`/profile/${userData.id}/edit`}
-              >
-                {login && isProfile ? "Edit Profile" : ""}
+              <Link className="nav-link active" aria-current="page" to="#">
+                Edit Profile
               </Link>
             </li>
 
             <li className="nav-item">
               <Link className="nav-link active" to="/likelist">
-                {login ? "Favourite List" : ""}
+                Favourite List
               </Link>
             </li>
 
-            {/* <li className="nav-item">
+            <li className="nav-item">
               <Link className="nav-link active" to="/student">
                 Student
               </Link>
-            </li>  */}
+            </li>
 
             <li className="nav-item">
               <Link
@@ -57,64 +53,18 @@ function Navbar() {
                 aria-current="page"
                 to="/account"
               >
-                {login ? "Account" : ""}
+                Account
               </Link>
             </li>
 
             <li className="nav-item">
               <Link className="nav-link active" to="/register">
-                {login ? "" : "Register"}
+                Register
               </Link>
             </li>
-
-            <li className="nav-item">
-              <Link
-                onClick={login ? handleClick : null}
-                className="nav-link active"
-                to={login ? "/dashboard" : "/login"}
-              >
-                {login ? "Logout" : "Login"}
-              </Link>
-            </li>
-
-            {/*
-              <li className="nav-item dropdown">
-              <Link
-                className="nav-link dropdown-toggle"
-                to="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </Link>
-              <ul className="dropdown-menu">
-                <li>
-                  <Link className="dropdown-item" to="/register">
-                    Register
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="dropdown-item"
-                    to={loggedIn ? "/logout" : "/login"}
-                  >
-                    {loggedIn ? "Logout" : "Login"}
-                  </Link>
-                </li>
-              </ul>
-            </li>
-
-
-              <li className="nav-item">
-              <Link className="nav-link disabled" aria-disabled="true">
-                Disabled
-              </Link>
-            </li>
-               */}
           </ul>
-          {/* 
-           <form className="d-flex" role="search">
+
+          <form className="d-flex" role="search">
             <input
               className="form-control me-2"
               type="search"
@@ -125,7 +75,6 @@ function Navbar() {
               Search
             </button>
           </form>
-          */}
         </div>
       </div>
     </nav>
