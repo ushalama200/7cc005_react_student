@@ -5,7 +5,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg bg-body-tertiary shadow">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          Student
+          Usha_Lama
         </Link>
         <button
           className="navbar-toggler"
@@ -25,11 +25,11 @@ function Navbar() {
                 Home
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link className="nav-link" to="/contact">
                 Contact Us
               </Link>
-            </li>
+            </li> */}
             <li className="nav-item">
               <Link className="nav-link" to="/student">
                 Student
