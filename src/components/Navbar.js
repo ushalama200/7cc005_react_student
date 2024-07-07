@@ -54,11 +54,7 @@ function Navbar() {
                 </li>
               </ul>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link disabled" aria-disabled="true">
-                Disabled
-              </Link>
-            </li>
+     
           </ul>
           <form className="d-flex" role="search">
             <input
