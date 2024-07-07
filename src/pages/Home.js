@@ -1,8 +1,12 @@
+
+import images from './images.jpeg'
 function Home() {
   return (
     <div>
-      <h1>This is home page</h1>
-    </div>
+      <center>
+      <img src={images} alt="My Image" />
+      </center>
+         </div>
   );
 }
 
