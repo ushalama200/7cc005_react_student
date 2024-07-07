@@ -21,49 +21,55 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link
-                className="nav-link active"
-                aria-current="page"
-                to="/create-profile"
-              >
-                Add Profile
+              <Link className="nav-link active" aria-current="page" to="/home">
+                Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="#">
-                Edit Profile
+              <Link className="nav-link" to="/contact">
+                Contact Us
               </Link>
             </li>
-
             <li className="nav-item">
-              <Link className="nav-link active" to="/likelist">
-                Favourite List
-              </Link>
-            </li>
-
-            <li className="nav-item">
-              <Link className="nav-link active" to="/student">
+              <Link className="nav-link" to="/student">
                 Student
               </Link>
             </li>
-
-            <li className="nav-item">
+            <li className="nav-item dropdown">
               <Link
-                className="nav-link active"
-                aria-current="page"
-                to="/account"
+                className="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
-                Account
+                Dropdown
               </Link>
-            </li>
+              <ul className="dropdown-menu">
+                <li>
+                  <Link className="dropdown-item" to="#">
+                    Action
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="#">
+                    Another action
+                  </Link>
+                </li>
 
+                <li>
+                  <Link className="dropdown-item" to="#">
+                    Something else here
+                  </Link>
+                </li>
+              </ul>
+            </li>
             <li className="nav-item">
-              <Link className="nav-link active" to="/register">
-                Register
+              <Link className="nav-link disabled" aria-disabled="true">
+                Disabled
               </Link>
             </li>
           </ul>
-
           <form className="d-flex" role="search">
             <input
               className="form-control me-2"

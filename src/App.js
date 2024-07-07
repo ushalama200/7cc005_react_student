@@ -1,14 +1,12 @@
 import MyRouter from "./router";
-import "./App.css";
-import "./components/Navbar";
+import Navbar from "./components/Navbar";
 
-function App() {
+const App = () => {
   return (
     <div>
       <Navbar />
       <MyRouter />
     </div>
   );
-}
-
+};
 export default App;

@@ -1,17 +1,10 @@
-import "../App.css";
-import ClipLoader from "react-spinners/ClipLoader";
-import React, { useState } from "react";
-
 function Loading() {
   return (
-    <div className="loading-container">
-      <div className="sweet-loading">
-        <ClipLoader
-          size={150}
-          aria-label="Loading Spinner"
-          data-testid="loader"
-        />
+    <div className="container mt-3">
+      <div className="spinner-border text-primary" role="status">
+        <span className="visually-hidden">Loading...</span>
       </div>
+      <span>Loading ..... Please wait.</span>
     </div>
   );
 }
