@@ -38,18 +38,18 @@ function Navbar() {
               <ul className="dropdown-menu">
                 <li>
                   <Link className="dropdown-item" to="#">
-                    Action
+                    Action 1
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" to="#">
-                    Another action
+                    Action 2
                   </Link>
                 </li>
 
                 <li>
                   <Link className="dropdown-item" to="#">
-                    Something else here
+                    Action 3
                   </Link>
                 </li>
               </ul>
